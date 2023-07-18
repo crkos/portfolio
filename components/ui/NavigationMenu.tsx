@@ -86,6 +86,8 @@ const NavigationMenuViewport = React.forwardRef<
     // Cambie left-0 a right-0 porque si la pantalla se veia desde un celular,
     // el modal que se abria, se mostraba hacia la derecha en este caso se cambio,
     // para que mostrara hacia la izquierda
+    // Esto es un bug propiamente de shadcn o de radix, esto es solo un quickfix
+    // Ya que deberia cambiar de posicion solo no tendria que ponerlo yo mismo
   <div className={cn("absolute right-0 top-full flex justify-center w-fit")}>
     <NavigationMenuPrimitive.Viewport
       className={cn(

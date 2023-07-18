@@ -14,6 +14,7 @@ const NavBar = () => {
                         <p className="font-bold text-gray-900 text-base bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 sm:text-xl md:text-2xl">Jordan</p>
                     </Link>
                     <NavContent />
+
                 </div>
             </Container>
         </div>

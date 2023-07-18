@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/NavigationMenu";
 import Link from "next/link";
 import {cn} from "@/lib/utils";
+import {ModeToggle} from "@/components/ModeToggle";
 
 
 interface ComponentProps {
@@ -53,25 +54,26 @@ const NavContent = () => {
                 <NavigationMenuItem className="hidden sm:block">
                     <Link href="/#about" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            <p className="text-zinc-700 sm:text-lg">About</p>
+                            <p className="sm:text-lg">About</p>
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="hidden sm:block">
                     <Link href="/#projects" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            <p className="text-zinc-700 sm:text-lg">Projects</p>
+                            <p className="sm:text-lg">Projects</p>
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="hidden sm:block">
                     <Link href="/#contact" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            <p className="text-zinc-700 sm:text-lg">Contact</p>
+                            <p className="sm:text-lg">Contact</p>
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
             </NavigationMenuList>
+            <ModeToggle />
         </NavigationMenu>
     );
 };
