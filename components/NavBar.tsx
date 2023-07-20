@@ -6,7 +6,7 @@ import NavContent from "@/components/NavContent";
 
 const NavBar = () => {
     return (
-        <div className="border-b">
+        <div className="border-b w-full">
             <Container>
                 <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
                     <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2 items-center hover:scale-105 transition ease-in-out duration-150">

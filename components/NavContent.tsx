@@ -73,7 +73,9 @@ const NavContent = () => {
                     </Link>
                 </NavigationMenuItem>
             </NavigationMenuList>
-            <ModeToggle />
+            <div className="ml-4">
+                <ModeToggle />
+            </div>
         </NavigationMenu>
     );
 };
