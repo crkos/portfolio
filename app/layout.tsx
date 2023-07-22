@@ -4,6 +4,7 @@ import {Urbanist} from 'next/font/google'
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import {ThemeProvider} from "@/providers/ThemeProvider";
+import ModalProvider from "@/providers/ModalProvider";
 
 const urbanist = Urbanist({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={urbanist.className}>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ModalProvider />
           <NavBar />
           {children}
           <Footer />

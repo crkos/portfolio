@@ -29,7 +29,7 @@ const pagesAbout: ComponentProps[] = [
         description: "Proyectos realizados"
     },
     {
-        title: "Contact",
+        title: "Contacto",
         href: "/#contact",
         description: "Contactame"
     }
@@ -61,14 +61,14 @@ const NavContent = () => {
                 <NavigationMenuItem className="hidden sm:block">
                     <Link href="/#projects" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            <p className="sm:text-lg">Projects</p>
+                            <p className="sm:text-lg">Proyectos</p>
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="hidden sm:block">
                     <Link href="/#contact" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            <p className="sm:text-lg">Contact</p>
+                            <p className="sm:text-lg">Contacto</p>
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
