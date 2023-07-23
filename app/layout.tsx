@@ -5,6 +5,8 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import {ThemeProvider} from "@/providers/ThemeProvider";
 import ModalProvider from "@/providers/ModalProvider";
+import Providers from "@/components/Providers";
+import {Toaster} from "@/components/ui/toaster";
 
 const urbanist = Urbanist({ subsets: ['latin'] })
 
@@ -21,12 +23,12 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <body className={urbanist.className}>
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <ModalProvider />
+      <Providers>
           <NavBar />
           {children}
           <Footer />
-      </ThemeProvider>
+          <Toaster />
+      </Providers>
       </body>
     </html>
   )
