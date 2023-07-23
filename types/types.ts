@@ -6,5 +6,7 @@ export interface Images {
 export interface Projects {
     title: string,
     tags: string[],
-    img: Images[]
+    img: Images[],
+    link: string,
+    gitLink: string
 }
