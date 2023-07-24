@@ -6,7 +6,7 @@ const About = () => {
                 <span className="w-20 h-1 bg-gradient-to-r from-pink-500 to-violet-500 lg:w-1/4"></span>
             </div>
             <div className="w-full px-4 lg:w-1/2">
-                <p className="mb-2 font-mono text-base sm:text-xl md:text-2xl lg:text-3xl">
+                <p className="mb-2 font-mono text-base sm:text-xl md:text-2xl lg:text-3xl text-center md:text-left">
                     Desarrollador de aplicaciones y sitios web, y con un gran interes por otras tecnologias. Experiencia en front-end y backend para el desarrollo de aplicaciones fullstack, de La Paz, Baja California Sur, México.
                 </p>
             </div>

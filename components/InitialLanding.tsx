@@ -1,4 +1,4 @@
-import {ArrowDown, Github, Twitter} from "lucide-react";
+import {ArrowDown, Github, Linkedin, Twitter} from "lucide-react";
 import Image from "next/image";
 
 const InitialLanding = () => {
@@ -16,9 +16,10 @@ const InitialLanding = () => {
                                             </span>{" "}
                                 y soy un desarrollador de software de Baja California Sur
                             </p>
-                            <div className="flex gap-x-4 flex-1">
+                            <div className="flex gap-x-6 flex-1">
                                 <a href="https://github.com/crkos" target="_blank" rel="noopener" className="hover:scale-105 transition duration-150 ease-in-out"><Github size={30} className="mt-1 md:mt-8" aria-label="Enlace a github"/></a>
                                 <a href="https://twitter.com/HigueraJordan" target="_blank" rel="noopener" className="hover:scale-105 transition duration-150 ease-in-out"><Twitter size={30} className="mt-1 md:mt-8" aria-label="Enlace a twitter"/></a>
+                                <a href="https://www.linkedin.com/in/jordan-higuera-higuera-0a3585237" target="_blank" rel="noopener" className="hover:scale-105 transition duration-150 ease-in-out"><Linkedin size={30} className="mt-1 md:mt-8" aria-label="Enlace a linkedin"/></a>
                             </div>
                         </div>
                     </div>

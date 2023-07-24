@@ -45,7 +45,7 @@ const ContactForm = () => {
            }
            toast({
                title: "Hubo un error.",
-               description: "Hubo algun error al enviar el mensaje",
+               description: "Hubo un error al enviar el mensaje",
                variant: "destructive"
            });
         },

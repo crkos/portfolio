@@ -10,7 +10,7 @@ export async function POST(req: Request) {
 
         const transport = nodemailer.createTransport({
             host: "live.smtp.mailtrap.io",
-            port: 25,
+            port: 587,
             auth: {
                 user: "api",
                 pass: "25246877d37ad6db565d7b2e9f903a71"
@@ -19,10 +19,10 @@ export async function POST(req: Request) {
 
         const sendMail = async () => {
             const mail = await transport.sendMail({
-                from: '"Fred Foo 👻" <jordan@jordan.live>',
+                from: `"${name}" <jordan@jordan.live>`,
                 to: "jordan_higuera@hotmail.com",
                 subject: "Contacto Portfolio",
-                text: `${message}`
+                text: `${message} - ${email}`
             })
         }
 

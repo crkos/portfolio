@@ -4,10 +4,6 @@ import About from "@/components/About";
 import ProjectList from "@/components/ProjectList";
 import ContactForm from "@/components/ContactForm";
 
-// TODO Añadir la forma de contacto abajo y conectarlo con algun sistema de correo
-
-
-
 export default function Home() {
     return (
         <main>
