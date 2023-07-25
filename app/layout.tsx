@@ -3,8 +3,6 @@ import type { Metadata } from 'next'
 import {Urbanist} from 'next/font/google'
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import {ThemeProvider} from "@/providers/ThemeProvider";
-import ModalProvider from "@/providers/ModalProvider";
 import Providers from "@/components/Providers";
 import {Toaster} from "@/components/ui/toaster";
 
@@ -21,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" suppressHydrationWarning>
-      <body className={urbanist.className}>
+    <html lang="es" suppressHydrationWarning className={urbanist.className}>
+      <body>
       <Providers>
           <NavBar />
           {children}

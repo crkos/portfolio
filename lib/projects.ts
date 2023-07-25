@@ -3,7 +3,7 @@ import {Projects} from "@/types/types";
 export const proyectos: Projects[] = [
     {
         title: "Store Ecommerce",
-        tags: ["#typescript", "headlessui", "#react", "#tailwindcss", "#nextjs"],
+        tags: ["#typescript", "#headlessui", "#react", "#tailwindcss", "#nextjs"],
         img: [
             {id: "/ecommerce-store/ecommerce-store.png", url: "/ecommerce-store/ecommerce-store.png"},
             {id: "/ecommerce-store/ecommerce-store-cart.png", url: "/ecommerce-store/ecommerce-store-cart.png"},
@@ -29,7 +29,7 @@ export const proyectos: Projects[] = [
     },
     {
         title: "Breadit",
-        tags: ["#typescript", "#shadcn", "#nextauth", "react", "#nextjs"],
+        tags: ["#typescript", "#shadcn", "#nextauth", "#react", "#nextjs"],
         img: [
             {id: "/breadit/breadit.png", url: "/breadit/breadit.png"},
             {id: "/breadit/breadit-post.png", url: "/breadit/breadit-post.png"},

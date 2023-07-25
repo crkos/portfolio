@@ -1,32 +1,25 @@
 import {z} from "zod";
 import {contactFormSchema} from "@/lib/validators/contactForm";
-const nodemailer = require("nodemailer")
+import { MailtrapClient } from "mailtrap";
 
 export async function POST(req: Request) {
     try {
         const body = await req.json();
+        const SENDER_EMAIL: string = "noreply@jordan.live";
+        const RECIPIENT_EMAIL: string = "jordan_higuera@gmail.com";
 
         const { name, message, email } = contactFormSchema.parse(body);
 
-        const transport = nodemailer.createTransport({
-            host: "live.smtp.mailtrap.io",
-            port: 587,
-            auth: {
-                user: "api",
-                pass: "25246877d37ad6db565d7b2e9f903a71"
-            }
+        const client = new MailtrapClient({token: process.env.NODEMAILER_API_TOKEN!});
+
+        const sender = { name: "Mailtrap Test", email: SENDER_EMAIL };
+
+        await client.send({
+            from: sender,
+            to: [{email: RECIPIENT_EMAIL}],
+            subject: `Portfolio Contact - ${name}`,
+            text: `${message} - Email: ${email}`
         });
-
-        const sendMail = async () => {
-            const mail = await transport.sendMail({
-                from: `"${name}" <jordan@jordan.live>`,
-                to: "jordan_higuera@hotmail.com",
-                subject: "Contacto Portfolio",
-                text: `${message} - ${email}`
-            })
-        }
-
-        await sendMail();
 
         return new Response("OK");
 
