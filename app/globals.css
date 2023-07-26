@@ -80,3 +80,9 @@
 html {
   scroll-behavior: smooth !important;
 }
+
+@media (max-height: 680px) {
+  .hide-arrow {
+    display: none;
+  }
+}

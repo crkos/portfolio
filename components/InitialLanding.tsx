@@ -1,11 +1,12 @@
 import {ArrowDown, Github, Linkedin, Twitter} from "lucide-react";
 import Image from "next/image";
+import Arrow from "@/components/Arrow";
 
 const InitialLanding = () => {
     return (
 
-            <div className="px-4 sm:px-6 lg:px-8 lg:ml-0 relative">
-                <div className="flex h-screen flex-col-reverse items-center justify-center text-center lg:flex-row">
+            <div className="px-4 sm:px-6 lg:px-8 lg:ml-0 relative pb-6">
+                <div className="flex min-h-screen flex-col-reverse items-center justify-center text-center md:flex-row">
                     <div className="flex md:w-1/2 items-ceter justify-center w-full">
                         <div className="flex flex-col items-center justify-center">
                             <p className="font-mono leading-10 text-xl  sm:text-2xl md:text-3xl lg:text-5xl">
@@ -36,11 +37,7 @@ const InitialLanding = () => {
                         />
                     </div>
                 </div>
-                <div className="absolute bottom-5 left-0 right-0 flex justify-center pb-10 px-4 animate-bounce">
-                    <div className="w-10">
-                        <ArrowDown size={32} />
-                    </div>
-                </div>
+                <Arrow />
             </div>
 
     );
