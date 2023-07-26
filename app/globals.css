@@ -81,8 +81,9 @@ html {
   scroll-behavior: smooth !important;
 }
 
-@media (max-height: 680px) {
-  .hide-arrow {
+@media screen and (max-height: 680px){
+  .hide-arrow-height {
     display: none;
   }
 }
+

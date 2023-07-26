@@ -18,7 +18,7 @@ const Arrow = () => {
     }, []);
 
     return (
-        <div className="absolute bottom-0 pb-20 left-0 right-0 flex justify-center px-4 animate-bounce hide-arrow">
+        <div className="absolute bottom-0 pb-20 left-0 right-0 flex justify-center px-4 animate-bounce hide-arrow-height ">
             <div className="w-10">
                 <ArrowDown size={32} />
             </div>
